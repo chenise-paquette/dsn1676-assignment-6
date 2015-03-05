@@ -13,7 +13,7 @@ body {
 section {
   padding: 4em 1em;
   position: relative;
-
+  overflow: hidden;
   border-bottom: 1px solid #ccc;
 }
 
@@ -50,11 +50,11 @@ div {
 
   background-color: hotpink;
   transform: rotate(45deg);
-  transition: all ease
+  transition: all 200ms linear;
 }
 
-js-move-in-out{
-    
+.js-move-in-out{
+    right: -200px;
 }
 
 .panel {
@@ -68,7 +68,6 @@ js-move-in-out{
   text-align: center;
   max-height: 0;
   overflow: hidden;
-  c
 }
 
 .js-panel-expand{
