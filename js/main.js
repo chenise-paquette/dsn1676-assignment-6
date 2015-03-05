@@ -11,7 +11,7 @@ var $btnBounce = $('.btn-bounce');
 var $circle = $('.circle');
 
 var $btnAppend = $('.btn-append');
-var $ = $('.circle');
+var $list = $('.list');
 
 
 $btnCollapseExpand.on('click', function () {
@@ -33,3 +33,11 @@ $btnBounce.on('click', function () {
 $circle.on('webkitAnimationEnd animationend', function () {
     $circle.removeClass('js-circle-bounce');
 });
+
+$btnAppend.on('click', function () {
+   
+var $li = $('<li>New list Element</li>');
+    $list.append($li);
+    $li.toggleClass ('js-btn-append');
+});
+

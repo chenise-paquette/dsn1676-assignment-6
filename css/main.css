@@ -127,7 +127,7 @@ div {
   right: 1em;
   top: 1em;
   width: 250px;
-
+  
   border: 1px solid #ccc;
   overflow: hidden;
   overflow-y: auto;
@@ -135,9 +135,24 @@ div {
 
 .list li {
   padding: 0.5em;
-
+  overflow: hidden;
   background-color: plum;
   border: 1px solid mediumpurple;
-
   color: mediumpurple;
 }
+
+.js-btn-append{
+    animation: js-btn-append 1s linear;
+}
+
+@keyframes js-btn-append {
+    0% {
+       max-height: 0;
+    }
+
+    100%{
+        max-height: 2em;
+      }
+}
+ 
+
